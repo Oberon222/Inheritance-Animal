@@ -17,8 +17,8 @@ protected:
 	string speciesOfReptile;
 	int length;
 public:
-	Reptile(string speciesOfReptile, int length) : speciesOfReptile(speciesOfReptile), length(length)
-	{ }
+	Reptile(string animalSpecies, float speed, float weight, string habitat, int lifetime,string speciesOfReptile, int length) : Animal( animalSpecies,  speed,  weight,  habitat, lifetime),
+		speciesOfReptile(speciesOfReptile), length(length) { }
 
 	void Move()const
 	{

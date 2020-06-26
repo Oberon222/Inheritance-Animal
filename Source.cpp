@@ -14,7 +14,7 @@ using namespace std;
 
 int main()
 {
-	Tunny t1("silvery", 3, "fish", 87.4, 593.4, "ocean", 50);
+	Tunny t1("fish",87.4,589.7,"ocean",50,3,"silvery");
 	t1.Show();
 
 	system("pause");

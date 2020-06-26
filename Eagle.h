@@ -4,16 +4,14 @@
 #include"Animal.h"
 #include"Bird.h"
 using namespace std;
-class Eagle : public Animal, public Bird
+class Eagle : public Bird
 {
 	string food;
 	string color;
 		
 public:
-	Eagle(string food, string color,string name, int flightAltitude,
-		string animalSpecies, float speed, float weight, 
-		string habitat, int lifetime) : food(food), color(color), Bird( name, flightAltitude),
-		Animal( animalSpecies,  speed,  weight,  habitat,  lifetime)
+	Eagle(string animalSpecies, float speed, float weight, string habitat, int lifetime, string name, int flightAltitude, string food, string color) : 
+		Bird( animalSpecies,  speed,  weight,  habitat,  lifetime,  name,  flightAltitude), food(food), color(color) 
 	{ }
 
 	

@@ -4,14 +4,12 @@
 #include<iostream>
 #include<string>
 using namespace std;
-class Tunny : public Fish, public Animal
+class Tunny : public Fish
 {
 	string color;
 public:
-	Tunny(string color, int length, string animalSpecies, float speed, 
-		float weight, string habitat, int lifetime) : color(color), 
-		Fish(length), Animal(animalSpecies, speed, weight, habitat, lifetime)
-	{ }
+	Tunny(string animalSpecies, float speed, float weight, string habitat, int lifetime, int length,string color) : 
+		Fish( animalSpecies,  speed,  weight,  habitat,  lifetime,  length), color(color) { }
 
 
 	void Say()const

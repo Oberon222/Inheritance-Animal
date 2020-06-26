@@ -5,16 +5,13 @@
 #include<string>
 using namespace std;
 
-class Cobra : public Animal, public Reptile
+class Cobra : public Reptile
 {
 	string food;
 	string color;
 public:
-	Cobra(string food, string color, string speciesOfReptile, 
-		int length, string animalSpecies, float speed, float weight, 
-		string habitat, int lifetime) : food(food), color(color),
-		Reptile(speciesOfReptile, length), 
-		Animal( animalSpecies,  speed,  weight,  habitat,  lifetime)
+	Cobra(string animalSpecies, float speed, float weight, string habitat, int lifetime, string speciesOfReptile, int length, string food, string color) : 
+		Reptile( animalSpecies,  speed,  weight,  habitat,  lifetime,  speciesOfReptile,  length), food(food), color(color)
 	{ }
 
 	

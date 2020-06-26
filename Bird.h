@@ -12,13 +12,11 @@ protected:
 public:
 	Bird() : name("No name"), flightAltitude(0)
 	{ }
-	Bird(string name,  int flightAltitude) : name(name), flightAltitude(flightAltitude), Animal(animalSpecies,speed, weight, habitat,lifetime)
+	Bird(string animalSpecies, float speed, float weight, string habitat, int lifetime,string name,  int flightAltitude) : 
+		Animal(animalSpecies, speed, weight, habitat, lifetime), name(name), flightAltitude(flightAltitude) 
 	{ }
 
-	Bird(string name) : Bird()
-	{
-		this->name = name;
-	}
+	
 
 	void Move()const
 	{
