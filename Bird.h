@@ -20,6 +20,12 @@ public:
 		this->name = name;
 	}
 
+	void Move()const
+	{
+		cout << "I'm flying!!!" << endl;
+	}
+
+	
 	void Show()const
 	{
 		cout << "Bird name: " << name << endl;

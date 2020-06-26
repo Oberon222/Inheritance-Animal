@@ -25,12 +25,12 @@ public:
 
 	void Move()const
 	{
-
+		cout << "I'm moving ..." << endl;
 	}
 
 	void Say()const
 	{
-
+		cout << "I am saying ..." << endl;
 	}
 	
 

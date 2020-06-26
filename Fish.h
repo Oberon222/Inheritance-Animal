@@ -11,6 +11,14 @@ protected:
 public:
 	Fish(int length) : length(length)
 	{ }
+
+	void Move()const
+	{
+		cout << "I swim" << endl;
+	}
+
+	
+
 	void Show()const
 	{
 		cout << "Fish length: " << length << endl;

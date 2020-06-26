@@ -17,10 +17,18 @@ public:
 		Animal( animalSpecies,  speed,  weight,  habitat,  lifetime)
 	{ }
 
+	
+	void Say()const
+	{
+		cout << "I am saying Chhhhhhhhhhhh" << endl;
+	}
+
 	void Show()const
 	{
 		cout << "Characteristics of cobra" << endl;
 		Reptile::Show();
+		Reptile::Move();
+		Say();
 		cout << "Cobra food: " << food << endl;
 		cout << "Cobra color: " << color << endl;
 		Animal::Show();
